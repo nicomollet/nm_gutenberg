@@ -1,0 +1,37 @@
+.h1, .h2, .h3, h1, h2, h3, h4, h5, h6{
+    font-family: var(--wp--preset--font-family--secondary);
+
+}
+
+.section-hero{
+	background:url('../images/hero-background.png') no-repeat top right;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+// Section 4 Columns
+.section-4-columns{
+	h2{
+		margin:0;
+	}
+	.wp-block-column{
+		padding: 30px;
+		&.has-background-light-background-color{
+			p{
+				border-bottom: 1px solid #DADADA;
+			}
+		}
+	}
+
+	h3{
+		margin-bottom: 10px;
+	}
+	p{
+		margin-top: 0;
+		padding-bottom: 20px;
+
+
+	}
+}
+

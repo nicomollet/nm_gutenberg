@@ -1,0 +1,117 @@
+
+.btn, [class*=" btn-"], [class^=btn-], button, input[type=submit], input[type=button],
+.wp-element-button{
+    font-family: var(--wp--preset--font-family--primary);
+	text-transform: uppercase;
+	font-weight: 700;
+
+}
+
+
+textarea {
+	padding: 1rem;
+	width: 100%
+}
+
+select {
+	padding: 3px
+}
+
+
+.wp-block-button__link {
+	box-shadow: var(--wp--custom--small-button-shadow);
+}
+
+
+.wp-block-button__link:focus,
+.wp-block-button__link:hover {
+	filter: brightness(94%) !important;
+	box-shadow: var(--wp--custom--small-button-shadow);
+}
+
+.wp-block-button__link:active {
+	border-color: var(--wp--custom--button-border-color);
+	box-shadow: var(--wp--custom--button-highlight);
+	filter: brightness(93%) !important;
+	margin-top: 1px;
+	margin-bottom: -1px;
+}
+
+.wp-block-button__link:visited {
+	background-color: initial;
+	border-color: var(--wp--custom--button-border-color);
+	box-shadow: var(--wp--custom--small-button-shadow);
+}
+
+/* The padding in theme.json is not applied to the outlined button,
+ so it is added manually */
+.is-style-outline > .wp-block-button__link,
+.wp-block-button__link.is-style-outline {
+	padding: var(--wp--custom--button-padding);
+}
+
+/* Match the editor */
+.wp-block-buttons > .wp-block-button {
+	margin-top: .5em;
+}
+
+.wp-block-button__link svg {
+	vertical-align: middle;
+	fill: currentcolor;
+}
+
+
+button:not(.components-button):not(.wp-block-navigation *):not(.pswp__button),input[type=color],input[type=date],input[type=datetime-local],input[type=datetime],input[type=email],input[type=month],input[type=number],input[type=password],input[type=reset],input[type=search],input[type=submit],input[type=tel],input[type=text],input[type=time],input[type=url],input[type=week],select,textarea {
+	font-size: var(--wp--preset--font-size--small);
+	font-family: var(--wp--preset--font-family--system);
+	line-height: 1.7
+}
+
+button:not(.components-button):not(.wp-block-navigation *):not(.pswp__button),input[type=reset],input[type=submit] {
+	border: 2px solid var(--wp--custom--button-border-color);
+	padding: var(--wp--custom--button-padding);
+	border-radius: var(--wp--custom--button-border-radius);
+	background: var(--wp--preset--color--secondary);
+	box-shadow: var(--wp--custom--small-button-shadow)
+}
+
+button:not(.components-button):not(.wp-block-navigation *):not(.pswp__button):focus,button:not(.components-button):not(.wp-block-navigation *):not(.pswp__button):hover,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:focus,input[type=submit]:hover {
+	filter: brightness(94%)!important;
+	box-shadow: var(--wp--custom--small-button-shadow)
+}
+
+button:not(.components-button):not(.wp-block-navigation *):not(.pswp__button):active,input[type=reset]:active,input[type=submit]:active {
+	border-color: var(--wp--custom--button-border-color);
+	box-shadow: var(--wp--custom--button-highlight);
+	filter: brightness(93%)!important;
+	margin-top: 1px;
+	margin-bottom: -1px
+}
+
+.post-password-form input[type=password] {
+	min-height: 46px
+}
+
+.wp-block-navigation__responsive-container-close svg,.wp-block-navigation__responsive-container-open svg {
+	width: 48px;
+	height: 48px
+}
+
+.is-style-full-site-editing-flat-button .wp-block-button__link,
+.is-style-full-site-editing-flat-button .wp-block-button__link:active,
+.is-style-full-site-editing-flat-button .wp-block-button__link:focus,
+.is-style-full-site-editing-flat-button .wp-block-button__link:hover,
+.is-style-full-site-editing-flat-button .wp-block-button__link:visited {
+	box-shadow: none;
+	border-radius: 0;
+	margin-top: 0;
+	margin-bottom: 0
+}
+
+.is-style-full-site-editing-button-shadow .wp-block-button__link,.is-style-full-site-editing-button-shadow .wp-block-button__link:focus,.is-style-full-site-editing-button-shadow .wp-block-button__link:hover,.is-style-full-site-editing-button-shadow .wp-block-button__link:visited {
+	box-shadow: var(--wp--custom--button-shadow)
+}
+
+.is-style-full-site-editing-button-shadow .wp-block-button__link:active {
+	box-shadow: var(--wp--custom--button-highlight)
+}

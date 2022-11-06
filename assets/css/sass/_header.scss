@@ -1,0 +1,48 @@
+body {
+    --wp--custom--color--textcolor: #333333;
+	/*color: var(--wp--custom--color--textcolor);*/
+	font-family: var(--wp--preset--font-family--primary);
+}
+.site-header{
+	max-width: var(--wp--style--global--content-size);
+    margin-left: auto !important;
+    margin-right: auto !important;
+	padding-top: var(--wp--custom--h-spacing);
+	padding-bottom: var(--wp--custom--h-spacing);
+	.wp-block-site-logo{
+		img{
+			width: 230px;
+		}
+	}
+
+}
+
+/* Main navigation */
+.wp-block-navigation:not(.has-background){
+	.wp-block-navigation{
+		&__submenu-container{
+			border:none;
+			box-shadow: 0px 10px 20px 3px rgb(0 0 0 / 10%);
+			padding: 5px;
+
+			.wp-block-navigation-item{
+				&__content{
+					&:hover{
+						background: var(--wp--preset--color--background-light);
+					}
+				}
+
+
+			}
+		}
+
+	}
+
+	.wp-block-navigation-item{
+		&__content{
+			padding:10px 20px;
+		}
+
+	}
+
+}
